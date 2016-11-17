@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="favicon.png">
+    <title>Smart</title>
+	<!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+    <link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="libs/linea/styles.css" />
+    <link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" href="libs/animate/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    
+
+	<link rel="stylesheet" href="css/fonts.css">
+</head>
+<body id="body-wrapper"> 
+    <audio autoplay preload="metadata">
+        <source src="audio/thunder.mp3" type="audio/mpeg">
+   </audio>
+   
+    <div class="cssload-loader">
+        <div class="cssload-square cssload-square--main">
+            <div class="cssload-square cssload-square--mini"></div>
+            <div class="cssload-square cssload-square--mini"></div>
+            <div class="cssload-square cssload-square--mini"></div>
+            <div class="cssload-square cssload-square--mini"></div>
+            <div class="cssload-square cssload-square--mini"></div>
+            <div class="cssload-square cssload-square--mini"></div>
+            <div class="cssload-square cssload-square--mini"></div>
+            <div class="cssload-square cssload-square--mini"></div>
+            <div class="cssload-square cssload-square--mini"></div>
+            <div class="cssload-square cssload-square--mini"></div>
+            <div class="cssload-square cssload-square--mini"></div>
+            <div class="cssload-square cssload-square--mini"></div>
+            <div class="cssload-square cssload-square--mini"></div>
+            <div class="cssload-square cssload-square--mini"></div>
+            <div class="cssload-square cssload-square--mini"></div>
+            <div class="cssload-square cssload-square--mini"></div>
+        </div>
+    </div>
+    
+    
+    <div class="wrapper" ng-controller="mainController">
+        <header data-parallax="scroll" data-image-src="img/bg.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="logo-container"></div>
+                    <button class="toggle-mnu">
+                        <span class="sandwich">
+                            <span class="sw-topper"></span>
+                            <span class="sw-bottom"></span>
+                            <span class="sw-footer"></span>
+                        </span>
+                    </button>
+                    <nav class="top-menu">
+                        <ul>
+                            <li><a href="#about" class="menu-item fadeInUp animated">Обо мне</a></li>
+                            <li><a href="#resume" class="menu-item fadeInUp animated">Резюме</a></li>
+                            <li><a href="#portfolio" class="menu-item fadeInUp animated">Портфолио</a></li>
+                            <li><a href="#contacts" class="menu-item fadeInUp animated">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="top-wrapper">
+                <div class="top-description">
+                    <div class="top-center">
+                        <div class="top-title">
+                            <h1>Жарко Роман</h1>
+                            <p>Front End developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="about" class="about bg-light">
+            <div class="section-header">
+                <h2>Обо мне</h2>
+                <div class="description-wrap">
+                    <div class="description">
+                        Познакомимся ближе
+                    </div>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-md-push-4 animation_1">
+                            <h3>Фото</h3>
+                            <div class="person">
+                                <a href="img/ava1.jpg" class="popup"><img src="img/ava1.jpg" alt="ava"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-md-pull-4 animation_2">
+                            <h3>Немного о себе</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam molestias tempora ut veritatis officia voluptatum dignissimos. Iure sed voluptate, in nesciunt ad dicta labore.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quo natus animi. Temporibus praesentium ducimus voluptatum delectus accusamus nisi sed rerum saepe ipsum velit, alias sunt magni officia provident deleniti optio amet porro, reprehenderit odit doloribus. Facilis illum perferendis molestias aut neque maxime iste enim corporis ipsum similique. Itaque, nemo.</p>
+                        </div>
+                        <div class="col-md-4 animation_3 personal-last--block">
+                            <h3>Персональная информация</h3>
+                            <h2 class="personal-header">Роман Жарко</h2>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, corporis.</li>
+                                <li>День рождения: 19 января 1987</li>
+                                <li>Телeфон: 093 708 63 06</li>
+                                <li>Email: roman.j.zharko@gmail.com</li>
+                            </ul>
+                            <div class="social-wrap">
+                                <ul>
+                                    <li><a href="" target="_blank"><i class="fa fa-vk"></i></a></li>
+                                    <li><a href="" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="" target="_blank"><i class="fa fa-github"></i></a></li>
+                                    <li><a href="" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="resume" class="resume">
+            <div class="section-header">
+                <h2>Резюме</h2>
+                <div class="description-wrap">
+                    <div class="description">Мои знания и достижения</div>
+                </div>
+            </div>
+            <div class="section-content resume-content">
+                <div class="col-md-6 col-sm-12 left">
+                    <h3>Работа</h3>
+                    <div class="resume-icon"><i class="icon-basic-case"></i></div>
+                    <div class="resume-item">
+                        <div class="year">2015-2016</div>
+                        <div class="resume-description">"HQ-sale" <strong>Верстальщик</strong></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur id voluptatem ratione quas rerum voluptate quidem veniam porro doloremque amet voluptatum sequi at, saepe quis, mollitia tenetur et laboriosam beatae distinctio cupiditate recusandae. Animi veritatis, commodi similique nisi perspiciatis.</p>
+                    </div>
+                    <div class="resume-item">
+                        <div class="year">2016-2017</div>
+                        <div class="resume-description">"IT STEP" <strong>Front-end</strong></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur id voluptatem ratione quas rerum voluptate quidem veniam porro doloremque amet voluptatum sequi at, saepe quis, mollitia tenetur et laboriosam beatae distinctio cupiditate recusandae. Animi veritatis, commodi similique nisi perspiciatis.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 right">
+                    <h3>Учеба</h3>
+                    <div class="resume-icon"><i class="icon-basic-book-pen"></i></div>
+                    <div class="resume-item">
+                        <div class="year">2015</div>
+                        <div class="resume-description">"Hi-5" <strong>Front end</strong></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur id voluptatem ratione quas rerum voluptate quidem veniam porro doloremque amet voluptatum sequi at, saepe quis, mollitia tenetur et laboriosam beatae distinctio cupiditate recusandae. Animi veritatis, commodi similique nisi perspiciatis.</p>
+                    </div>
+                    <div class="resume-item">
+                        <div class="year">2015</div>
+                        <div class="resume-description">"Hi-5" <strong>Front end</strong></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima aspernatur id voluptatem ratione quas rerum voluptate quidem veniam porro doloremque amet voluptatum sequi at, saepe quis, mollitia tenetur et laboriosam beatae distinctio cupiditate recusandae. Animi veritatis, commodi similique nisi perspiciatis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="bg-dark portfolio">
+            <div class="section-header">
+                <h2>Портфолио</h2>
+                <div class="description-wrap">
+                    <div class="description">Мои последние работы</div>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="filter-div controls">
+                            <ul>
+                                <li class="active filter" data-filter="all">Все работы</li>
+                                <li class="filter" data-filter=".category-2">Сайты</li>
+                            </ul>
+                        </div>
+                        <div id="portfolio-table">
+                            <div class="mix col-md-3 col-sm-6 col-xs-6 portfolio-item category-2">
+                                <img src="img/portfolio-images/1.jpg" alt="alt">
+                                <div class="portfolio-item-container">
+                                    <h3>Название работы</h3>
+                                    <p>Описание работы</p>
+                                    <a class="popup-content">Посмотреть</a>
+                                </div>
+                                <div class="hidden">
+                                    <div class="portfolio-description">
+                                        <div class="modal-box-content">
+                                            <button class="mfp-close" type="button" title="Close (Esc)">x</button>
+                                            <h3>Заголовок работы</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quam iure, sequi voluptatibus, adipisci ullam magni, dolor dicta aliquam vel quibusdam. Amet esse voluptas modi consequatur ratione nemo tempore hic nostrum quia porro deleniti voluptatum provident, commodi, doloribus dolores fugit neque, voluptatibus, quisquam eum sequi illum corporis in! Dignissimos, ea!</p>
+                                            <img src="img/portfolio-images/1.jpg" alt="alt">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mix col-md-3 col-sm-6 col-xs-6 portfolio-item category-1">
+                                <img src="img/portfolio-images/6.jpg" alt="alt">
+                                <div class="portfolio-item-container">
+                                    <h3>Название работы</h3>
+                                    <p>Описание работы</p>
+                                    <a class="popup-content">Посмотреть</a>
+                                </div>
+                                <div class="hidden">
+                                    <div class="portfolio-description">
+                                        <div class="modal-box-content">
+                                            <button class="mfp-close" type="button" title="Close (Esc)">x</button>
+                                            <h3>Заголовок работы</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quam iure, sequi voluptatibus, adipisci ullam magni, dolor dicta aliquam vel quibusdam. Amet esse voluptas modi consequatur ratione nemo tempore hic nostrum quia porro deleniti voluptatum provident, commodi, doloribus dolores fugit neque, voluptatibus, quisquam eum sequi illum corporis in! Dignissimos, ea!</p>
+                                            <img src="img/portfolio-images/6.jpg" alt="alt">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mix col-md-3 col-sm-6 col-xs-6 portfolio-item category-1">
+                                <img src="img/portfolio-images/5.jpg" alt="alt">
+                                <div class="portfolio-item-container">
+                                    <h3>Название работы</h3>
+                                    <p>Описание работы</p>
+                                    <a class="popup-content">Посмотреть</a>
+                                </div>
+                                <div class="hidden">
+                                    <div class="portfolio-description">
+                                        <div class="modal-box-content">
+                                            <button class="mfp-close" type="button" title="Close (Esc)">x</button>
+                                            <h3>Заголовок работы</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quam iure, sequi voluptatibus, adipisci ullam magni, dolor dicta aliquam vel quibusdam. Amet esse voluptas modi consequatur ratione nemo tempore hic nostrum quia porro deleniti voluptatum provident, commodi, doloribus dolores fugit neque, voluptatibus, quisquam eum sequi illum corporis in! Dignissimos, ea!</p>
+                                            <img src="img/portfolio-images/5.jpg" alt="alt">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mix col-md-3 col-sm-6 col-xs-6 portfolio-item category-2">
+                                <img src="img/portfolio-images/4.jpg" alt="alt">
+                                <div class="portfolio-item-container">
+                                    <h3>Название работы</h3>
+                                    <p>Описание работы</p>
+                                    <a class="popup-content">Посмотреть</a>
+                                </div>
+                                <div class="hidden">
+                                    <div class="portfolio-description">
+                                        <div class="modal-box-content">
+                                            <button class="mfp-close" type="button" title="Close (Esc)">x</button>
+                                            <h3>Заголовок работы</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quam iure, sequi voluptatibus, adipisci ullam magni, dolor dicta aliquam vel quibusdam. Amet esse voluptas modi consequatur ratione nemo tempore hic nostrum quia porro deleniti voluptatum provident, commodi, doloribus dolores fugit neque, voluptatibus, quisquam eum sequi illum corporis in! Dignissimos, ea!</p>
+                                            <img src="img/portfolio-images/4.jpg" alt="alt">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mix col-md-3 col-sm-6 col-xs-6 portfolio-item category-1">
+                                <img src="img/portfolio-images/5.jpg" alt="alt">
+                                <div class="portfolio-item-container">
+                                    <h3>Название работы</h3>
+                                    <p>Описание работы</p>
+                                    <a class="popup-content">Посмотреть</a>
+                                </div>
+                                <div class="hidden">
+                                    <div class="portfolio-description">
+                                        <div class="modal-box-content">
+                                            <button class="mfp-close" type="button" title="Close (Esc)">x</button>
+                                            <h3>Заголовок работы</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quam iure, sequi voluptatibus, adipisci ullam magni, dolor dicta aliquam vel quibusdam. Amet esse voluptas modi consequatur ratione nemo tempore hic nostrum quia porro deleniti voluptatum provident, commodi, doloribus dolores fugit neque, voluptatibus, quisquam eum sequi illum corporis in! Dignissimos, ea!</p>
+                                            <img src="img/portfolio-images/5.jpg" alt="alt">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mix col-md-3 col-sm-6 col-xs-6 portfolio-item category-1">
+                                <img src="img/portfolio-images/6.jpg" alt="alt">
+                                <div class="portfolio-item-container">
+                                    <h3>Название работы</h3>
+                                    <p>Описание работы</p>
+                                    <a class="popup-content">Посмотреть</a>
+                                </div>
+                                <div class="hidden">
+                                    <div class="portfolio-description">
+                                        <<div class="modal-box-content">
+                                            <button class="mfp-close" type="button" title="Close (Esc)">x</button>
+                                            <h3>Заголовок работы</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quam iure, sequi voluptatibus, adipisci ullam magni, dolor dicta aliquam vel quibusdam. Amet esse voluptas modi consequatur ratione nemo tempore hic nostrum quia porro deleniti voluptatum provident, commodi, doloribus dolores fugit neque, voluptatibus, quisquam eum sequi illum corporis in! Dignissimos, ea!</p>
+                                            <img src="img/portfolio-images/6.jpg" alt="alt">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mix col-md-3 col-sm-6 col-xs-6 portfolio-item category-2">
+                                <img src="img/portfolio-images/4.jpg" alt="alt">
+                                <div class="portfolio-item-container">
+                                    <h3>Название работы</h3>
+                                    <p>Описание работы</p>
+                                    <a class="popup-content">Посмотреть</a>
+                                </div>
+                                <div class="hidden">
+                                    <div class="portfolio-description">
+                                        <div class="modal-box-content">
+                                            <button class="mfp-close" type="button" title="Close (Esc)">x</button>
+                                            <h3>Заголовок работы</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quam iure, sequi voluptatibus, adipisci ullam magni, dolor dicta aliquam vel quibusdam. Amet esse voluptas modi consequatur ratione nemo tempore hic nostrum quia porro deleniti voluptatum provident, commodi, doloribus dolores fugit neque, voluptatibus, quisquam eum sequi illum corporis in! Dignissimos, ea!</p>
+                                            <img src="img/portfolio-images/4.jpg" alt="alt">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mix col-md-3 col-sm-6 col-xs-6 portfolio-item category-1">
+                                <img src="img/portfolio-images/1.jpg" alt="alt">
+                                <div class="portfolio-item-container">
+                                    <h3>Название работы</h3>
+                                    <p>Описание работы</p>
+                                    <a class="popup-content">Посмотреть</a>
+                                </div>
+                                <div class="hidden">
+                                    <div class="portfolio-description">
+                                        <div class="modal-box-content">
+                                            <button class="mfp-close" type="button" title="Close (Esc)">x</button>
+                                            <h3>Заголовок работы</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quam iure, sequi voluptatibus, adipisci ullam magni, dolor dicta aliquam vel quibusdam. Amet esse voluptas modi consequatur ratione nemo tempore hic nostrum quia porro deleniti voluptatum provident, commodi, doloribus dolores fugit neque, voluptatibus, quisquam eum sequi illum corporis in! Dignissimos, ea!</p>
+                                            <img src="img/portfolio-images/1.jpg" alt="alt">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="bg-light">
+            <div class="section-header">
+                <h2>Контакты</h2>
+                <div class="description-wrap">
+                    <div class="description">Оставте ваше сообщение</div>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-box">
+                                <div class="icon-basic-geolocalize-05 contact-icons"></div>
+                                <h3>Адрес:</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, sunt.</p>
+                            </div>
+                            <div class="contact-box">
+                                <div class="icon-basic-smartphone contact-icons"></div>
+                                <h3>Телефон:</h3>
+                                <p>093 123 45 67</p>
+                            </div>
+                            <div class="contact-box">
+                                <div class="icon-basic-webpage-img-txt contact-icons"></div>
+                                <h3>Email:</h3>
+                                <p><a href="#" target="_blanc">mysite@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <form action="https://formspree.io/roman.j.zharko@gmail.com" class="main-form" novalidate target="_blank">
+                                <label class="form-group">
+                                    <span class="color-element">*</span> Ваше имя:
+                                    <input type="text" name="name" placeholder="Ваше имя" data-validation-required-message="Вы не ввели имя" required>
+                                    <span class="help-block text-danger"></span>
+                                </label>
+
+                                <label class="form-group">
+                                    <span class="color-element">*</span> Ваш email:
+                                    <input type="email" name="email" placeholder="Ваш email" data-validation-required-message="Не корректно введен E-mail" required>
+                                    <span class="help-block text-danger"></span>
+                                </label>
+
+                                <label class="form-group">
+                                    <span class="color-element">*</span> Ваш телефон:
+                                    <input type="text" name="phone" placeholder="Ваш телефон" data-validation-required-message="Вы не ввели сообщение" required>
+                                    <span class="help-block text-danger"></span>
+                                </label>
+
+                                <button>Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-dark footer">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="copyright">&copy; 2016 Жарко Роман</div>
+                    <div class="social-wrap">
+                        <ul>
+                            <li><a href="" target="_blank"><i class="fa fa-vk"></i></a></li>
+                            <li><a href="" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="" target="_blank"><i class="fa fa-github"></i></a></li>
+                            <li><a href="" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+
+    <script src="libs/jquery-2.2.0.min.js"></script>
+    <script src="libs/parallax/parallax.min.js"></script>
+	<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="libs/mixitup/mixitup.min.js"></script>
+	<script src="libs/pageScroll/PageScroll2id.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+    <script src="libs/jqBootstrapValidation/jqBootstrapValidation.js"></script>
+    <!--<script src="https://code.createjs.com/preloadjs-0.6.2.min.js"></script>-->
+    <!--<script src="libs/angular/angular.min.js"></script>-->
+	<script src="js/script.js"></script>
+    <!--<script src="js/controllers/mainController.js"></script>-->
+</body>
+</html>

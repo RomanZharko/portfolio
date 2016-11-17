@@ -1,0 +1,135 @@
+$color: #D60270; 
+$text_color: #888;
+$main_color: #222;
+$bg_light: #FAFAFA;
+
+body {
+    color: $main_color;
+}
+	
+
+a {
+    color: $color;
+}
+	
+
+p,
+body .footer,
+.about li {
+    color: $text_color;
+}
+	
+.color-element {
+	color: $color;
+}
+.color-bg {
+	background-color: $color;
+}
+.color-border {
+	border-color: $color;
+}
+.bg-light {
+	background-color: $bg_light;
+}
+.bg-dark {
+	background-color: $main_color;
+	color: #fff;
+	.description::after {
+		background-color: #fff;
+    }
+	a {
+		color: #fff;
+    }
+}
+.top-menu {
+	a:hover {
+		color: $color;
+    }
+}
+
+.top-title {
+	p {
+		color: $bg_light
+    }
+}
+
+.description {
+	&::after {
+		background-color: $main_color;
+    }
+}
+
+section {
+	h3 {
+		color: $text_color;
+    }
+}
+
+.about {
+	p:nth-child(even) {
+		color: $color;
+    }
+}
+
+.resume-container {
+	h3 {
+		color: $main_color;
+		font-size: 16px;
+		font-weight: 600;
+    }
+}
+
+.resume-item {
+	.year {
+		background-color: $color;
+		color: #fff;
+    }
+}
+
+.portfolio {
+	li {
+		color: $text_color;
+    }
+	li.active {
+		color: #fff;
+		border-bottom: 1px solid $color;
+    }
+}
+
+.portfolio-item .portfolio-item-content {
+	a {
+		border-color: $color;
+		color: $color;
+    }
+}
+
+.footer a {
+	color: $color;
+}
+
+.contacts-icon {
+	color: $color;
+}
+
+.text-danger {
+	color: $color;
+}
+.contact-box {
+	.contact-icons {
+		color: $color;
+	}
+}
+
+
+form {
+	input:focus,
+	textarea:focus {
+		border: 1px solid $color;
+    }
+	button {
+		background-color: $color;
+    }
+	.form-group {
+		color: $text_color;
+    }
+}

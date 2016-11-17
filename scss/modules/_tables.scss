@@ -1,0 +1,174 @@
+.table {
+  th {
+    //color: $primary-color-light;
+    text-align: center;
+    vertical-align: middle;
+    span {
+      display: block;
+      &:first-child {
+        font-size: 23px;
+      }
+    }
+  }
+  tr {
+    min-height: 40px;
+    height: 40px;
+  }
+  .para {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-self: baseline;
+    height: 40px;
+  }
+  td {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    min-width: 30px;
+    .dropdown-content {
+      overflow-y: hidden;
+      li {
+        min-height: 35px;
+        height: 35px;
+        }
+    }
+    span {
+      font-size: 23px;
+    }
+    i {
+      cursor: pointer;
+      position: relative;
+      &:hover span {
+        display: inline-block;
+      }
+      span {
+        position: absolute;
+        display: none;
+        height: 150px;
+        width: 100px;
+        //top: -42px;
+        bottom: 33px;
+        left: -35px;
+        img {
+          width: 100%;
+          height: auto;
+          //border: 1px solid $primary-color;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+.works {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  div {
+    float: left;
+    &:before {
+      content: '';
+      height: 15px;
+      width: 15px;
+      display: inline-block;
+      margin: 0 10px;
+    }
+    &.home-work-w {
+      &:before {
+        background-color: $home-work;
+      }
+    }
+    &.control-work-w {
+      &:before {
+        background-color: $control-work;
+      }
+    }
+    &.class-work-w {
+      &:before {
+        background-color: $class-work;
+      }
+    }
+    &.lab-work-w {
+      &:before {
+        background-color: $lab-work;
+      }
+    }
+    &.absent-w {
+      &:before {
+        background-color: $absent;
+        border: 1px solid tomato;
+      }
+    }
+    &.late-w {
+      &:before {
+        background-color: $late;
+        border: 1px solid orange;
+      }
+    }
+    &.coment-w {
+      &:before {
+        content: '';
+        background-image: url(../../img/single-cloud.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+    &.opened-w {
+      &:before {
+        background-color: $primary-color-light;
+        border: 1px solid dodgerblue;
+      }
+    }
+    &.tested-w {
+      &:before {
+        background-color: #C6F9D8;
+        border: 1px solid #6EE698;
+      }
+    }
+    &.notTested-w {
+      &:before {
+        background-color: lightcoral;
+        border: 1px solid indianred;
+      }
+    }
+
+  }
+}
+.tabs {
+    .indicator {
+        background-color: $primary-color-light;
+    }
+}
+//input:not([type]):focus:not([readonly]),
+//input[type=text]:focus:not([readonly]),
+//input[type=password]:focus:not([readonly]),
+//input[type=email]:focus:not([readonly]),
+//input[type=url]:focus:not([readonly]),
+//input[type=time]:focus:not([readonly]),
+//input[type=date]:focus:not([readonly]),
+//input[type=datetime]:focus:not([readonly]),
+//input[type=datetime-local]:focus:not([readonly]),
+//input[type=tel]:focus:not([readonly]),
+//input[type=number]:focus:not([readonly]),
+//input[type=search]:focus:not([readonly]),
+//textarea.materialize-textarea:focus:not([readonly]) {
+//  border-bottom: 1px solid $primary-color-light;
+//  box-shadow: 0 1px 0 0 $primary-color-light;
+//}
+//input:not([type]):focus:not([readonly])+label,
+//input[type=text]:focus:not([readonly])+label,
+//input[type=password]:focus:not([readonly])+label,
+//input[type=email]:focus:not([readonly])+label,
+//input[type=url]:focus:not([readonly])+label,
+//input[type=time]:focus:not([readonly])+label,
+//input[type=date]:focus:not([readonly])+label,
+//input[type=datetime]:focus:not([readonly])+label,
+//input[type=datetime-local]:focus:not([readonly])+label,
+//input[type=tel]:focus:not([readonly])+label,
+//input[type=number]:focus:not([readonly])+label,
+//input[type=search]:focus:not([readonly])+label,
+//textarea.materialize-textarea:focus:not([readonly])+label {
+//  color: $primary-color-light;
+//}

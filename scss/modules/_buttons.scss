@@ -1,0 +1,22 @@
+button {
+    position: relative;
+    height: 57px;
+    width: 240px;
+    font-size: 16px;
+    text-transform: capitalize;
+    border: none;
+    border-radius: 28px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    cursor: pointer;
+    &:after {
+        content: '';
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &:hover {
+        box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+    }
+}
