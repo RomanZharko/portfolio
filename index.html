@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="favicon.png">
-    <title>Smart</title>
-	<!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+    <title>Portfolio</title>
     <link rel="stylesheet" href="libs/bootstrap-grid.min.css">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="libs/linea/styles.css" />
@@ -22,7 +21,11 @@
     <audio autoplay preload="metadata">
         <source src="audio/thunder.mp3" type="audio/mpeg">
    </audio>
-   
+<!--   
+   <div class="loader">
+        <div class="loader-inner"></div>
+    </div>-->
+<div class="loader">
     <div class="cssload-dots">
         <div class="cssload-dot"></div>
         <div class="cssload-dot"></div>
@@ -30,16 +33,18 @@
         <div class="cssload-dot"></div>
         <div class="cssload-dot"></div>
     </div>
+</div>
+    
 
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!--<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
         <defs>
             <filter id="goo">
                 <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12" ></feGaussianBlur>
-                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7" result="goo" ></feColorMatrix>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7" result="goo" ></feColorMatrix>-->
                 <!--<feBlend in2="goo" in="SourceGraphic" result="mix" ></feBlend>-->
-            </filter>
+            <!--</filter>
         </defs>
-    </svg>
+    </svg>-->
     
     
     <div class="wrapper" ng-controller="mainController">
@@ -412,7 +417,6 @@
 	<script src="libs/waypoints/waypoints.min.js"></script>
 	<script src="libs/animate/animate-css.js"></script>
     <script src="libs/jqBootstrapValidation/jqBootstrapValidation.js"></script>
-    <!--<script src="https://code.createjs.com/preloadjs-0.6.2.min.js"></script>-->
     <!--<script src="libs/angular/angular.min.js"></script>-->
 	<script src="js/script.js"></script>
     <!--<script src="js/controllers/mainController.js"></script>-->

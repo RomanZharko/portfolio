@@ -46,9 +46,14 @@ $(document).ready(function(){
 
     //preloader
     $(window).load(function(){
-        $('.cssload-dots + svg').fadeOut();
-        $('.cssload-dots').delay(400).fadeOut('slow');
+        $('.cssload-dots').fadeOut();
+        // $('.cssload-dots').delay(400).fadeOut('slow');
+        $('.loader').delay(400).fadeOut('slow');
     });
+    // $(window).load(function(){
+    //     $('.loader-inner').fadeOut();
+    //     $('.loader').delay(400).fadeOut('slow');
+    // });
 
     //magnific-popup
     $('.popup').magnificPopup({type:'image'});
