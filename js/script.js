@@ -46,8 +46,8 @@ $(document).ready(function(){
 
     //preloader
     $(window).load(function(){
-        $('.cssload-square--mini').fadeOut();
-        $('.cssload-square').delay(400).fadeOut('slow');
+        $('.cssload-dots + svg').fadeOut();
+        $('.cssload-dots').delay(400).fadeOut('slow');
     });
 
     //magnific-popup

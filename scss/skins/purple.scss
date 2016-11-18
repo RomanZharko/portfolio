@@ -121,16 +121,18 @@ section {
 }
 
 
-form {
-	input:focus,
-	textarea:focus {
-		border: 1px solid $color;
-    }
-	button {
-		background-color: $color;
-    }
-	.form-group {
-		color: $text_color;
-    }
+.section-content {
+	form {
+		.form-group {
+			color: $text_color;
+			input:focus,
+			textarea:focus {
+				border: 1px solid $color;
+			}
+		}
+		button {
+			background-color: $color;
+		}
+	}
 }
 
