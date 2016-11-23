@@ -524,7 +524,6 @@ section {
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
-    // font-family: "RalewayBold";
     font-size: 13px;
     letter-spacing: 3px;
     margin: 35px 0 35px;
@@ -543,3 +542,13 @@ section {
     padding: 0 3px;
   }
 }
+.gothic-class {
+  //filter: sepia(50%);
+  filter: grayscale(100%) sepia(100%);
+}
+.arabian-class {
+  filter: grayscale(50%);
+}
+//.gothic-class {
+//  filter: sepia(50%);
+//}

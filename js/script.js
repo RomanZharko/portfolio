@@ -76,16 +76,10 @@ $(document).ready(function(){
 	$(".top-menu ul a").mPageScroll2id();
 
 
-    // function randomInteger(min, max) {
-    //     var rand = min + Math.random() * (max - min)
-    //     rand = Math.round(rand);
-    //     return rand;
-    // }
-    // randomInteger(1, 4)
     var colors = ['tomato', 'blue', 'purple', 'pink'];
 
     var rand = Math.floor(Math.random() * colors.length);
-    console.log(colors[rand]);
+
     
     var box = $("#body-wrapper");
     
@@ -97,7 +91,26 @@ $(document).ready(function(){
             $("head").append($("<link rel='stylesheet' href='css/skins/"+colors[rand]+".css' type='text/css' media='screen' />"));
         }
     }
-console.log(box.size());
+
+    $('body').on('click', '.gothic-style', function(){
+        $("head").append($("<link rel='stylesheet' href='css/skins/blue.css' type='text/css' media='screen' />"));
+    });
+    $('body').on('mouseleave', '.gothic-style', function(){
+        $('body').attr('class', '');
+    });
+    $('body').on('mouseenter', '.gothic-style', function(){
+        $('body').addClass('gothic-class');
+    });
+    $('body').on('click', '.arabian-style', function(){
+        $("head").append($("<link rel='stylesheet' href='css/skins/purple.css' type='text/css' media='screen' />"));
+    });
+    $('body').on('mouseleave', '.arabian-style', function(){
+        $('body').attr('class', '');
+    });
+    $('body').on('mouseenter', '.arabian-style', function(){
+        $('body').addClass('arabian-class');
+    });
+
 });
 
 

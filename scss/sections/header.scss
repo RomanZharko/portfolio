@@ -1,4 +1,5 @@
 header {
+  transition: 1.5s;
   height: 100vh;
   width: 100%;
   padding-top: 20px;
@@ -228,6 +229,45 @@ header {
         }
       }
     }
+  }
+  .style-nav {
+    width: 139px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 45vh;
+    z-index: 999;
+    overflow: hidden;
+    li {
+      background-repeat: no-repeat;
+      text-align: right;
+      padding: 5px;
+      font: 31px 'Gothic';
+      position: relative;
+      border: 1px solid #000;
+      height: 40px;
+      width: 140px;
+      cursor: pointer;
+      transition: .5s;
+      right: -99px;
+      border-radius: 15px 0 0 15px;
+      &:hover {
+        right: 0;
+      }
+    }
+    .gothic-style {
+      background-image: url(../img/holsten-gate.svg);
+      background-color: #ffffff;
+    }
+    .fairy-style {
+      background-image: url(../img/unicorn.svg);
+      background-color: #f08080;
+    }
+    .arabian-style {
+      background-image: url(../img/mosque-facade.svg);
+      background-color: #ffffe0;
+    }
+
   }
 }
 

@@ -5,6 +5,13 @@
     font-style: normal;
     font-weight: normal;
 }
+/* font-family: "Arabian"; */
+@font-face {
+    font-family: "Arabian";
+    src: url("../fonts/arabian.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
 /* font-family: "RalewayBold"; */
 @font-face {
     font-family: "RalewayBold";
