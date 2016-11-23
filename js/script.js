@@ -110,6 +110,15 @@ $(document).ready(function(){
     $('body').on('mouseenter', '.arabian-style', function(){
         $('body').addClass('arabian-class');
     });
+    $('body').on('click', '.fairy-style', function(){
+        $("head").append($("<link rel='stylesheet' href='css/skins/tomato.css' type='text/css' media='screen' />"));
+    });
+    $('body').on('mouseleave', '.fairy-style', function(){
+        $('body').attr('class', '');
+    });
+    $('body').on('mouseenter', '.fairy-style', function(){
+        $('body').attr('class', '');
+    });
 
 });
 
