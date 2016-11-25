@@ -11,6 +11,7 @@
     margin-bottom: 50px;
   }
   li {
+    position: relative;
     display: inline-block;
     margin: 0 10px;
     text-transform: uppercase;
@@ -28,7 +29,6 @@
     padding: 0;
     position: relative;
     overflow: hidden;
-    transform: scale(1.02);
     &:hover .portfolio-item-container {
       opacity: 1;
       padding-top: 5%;
@@ -38,6 +38,7 @@
     }
     img {
       width: 100%;
+      transform: scale(1.02);
       transition: .5s;
     }
     .portfolio-item-container {

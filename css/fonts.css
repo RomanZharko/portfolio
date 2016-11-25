@@ -1,10 +1,10 @@
-/* font-family: "Gothic"; */
-/*@font-face {*/
-    /*font-family: "Gothic";*/
-    /*src: url("../fonts/arthur_gothic.ttf");*/
-    /*font-style: normal;*/
-    /*font-weight: normal;*/
-/*}*/
+ /*font-family: "Comforta";*/
+@font-face {
+    font-family: "Comforta";
+    src: url("../fonts/Comforta/Comfortaa-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
 /* font-family: "Arabian"; */
 /*@font-face {*/
     /*font-family: "Arabian";*/
