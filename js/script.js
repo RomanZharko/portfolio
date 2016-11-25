@@ -46,14 +46,9 @@ $(document).ready(function(){
 
     //preloader
     $(window).load(function(){
-        $('.cssload-dots').fadeOut();
-        // $('.cssload-dots').delay(400).fadeOut('slow');
+        $('.loader-inner').fadeOut('slow');
         $('.loader').delay(400).fadeOut('slow');
     });
-    // $(window).load(function(){
-    //     $('.loader-inner').fadeOut();
-    //     $('.loader').delay(400).fadeOut('slow');
-    // });
 
     //magnific-popup
     $('.popup').magnificPopup({type:'image'});
@@ -92,33 +87,19 @@ $(document).ready(function(){
         }
     }
 
-    $('body').on('click', '.gothic-style', function(){
+    $('body').on('click', '.deep', function(){
         $("head").append($("<link rel='stylesheet' href='css/skins/blue.css' type='text/css' media='screen' />"));
     });
-    $('body').on('mouseleave', '.gothic-style', function(){
-        $('body').attr('class', '');
-    });
-    $('body').on('mouseenter', '.gothic-style', function(){
-        $('body').addClass('gothic-class');
-    });
-    $('body').on('click', '.arabian-style', function(){
+    $('body').on('click', '.sky', function(){
         $("head").append($("<link rel='stylesheet' href='css/skins/purple.css' type='text/css' media='screen' />"));
     });
-    $('body').on('mouseleave', '.arabian-style', function(){
-        $('body').attr('class', '');
+    $('body').on('click', '.kobalt', function(){
+        $("head").append($("<link rel='stylesheet' href='css/skins/pink.css' type='text/css' media='screen' />"));
     });
-    $('body').on('mouseenter', '.arabian-style', function(){
-        $('body').addClass('arabian-class');
-    });
-    $('body').on('click', '.fairy-style', function(){
+    $('body').on('click', '.krayola', function(){
         $("head").append($("<link rel='stylesheet' href='css/skins/tomato.css' type='text/css' media='screen' />"));
     });
-    $('body').on('mouseleave', '.fairy-style', function(){
-        $('body').attr('class', '');
-    });
-    $('body').on('mouseenter', '.fairy-style', function(){
-        $('body').attr('class', '');
-    });
+
 
 });
 

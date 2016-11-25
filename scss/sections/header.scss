@@ -231,7 +231,7 @@ header {
     }
   }
   .style-nav {
-    width: 139px;
+    width: 39px;
     height: auto;
     position: absolute;
     right: 0;
@@ -244,31 +244,73 @@ header {
       padding: 5px;
       font: 31px 'Gothic';
       position: relative;
-      border: 1px solid #000;
       height: 40px;
-      width: 140px;
+      width: 60px;
       cursor: pointer;
       transition: .5s;
-      right: -99px;
+      right: -20px;
       border-radius: 15px 0 0 15px;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
       &:hover {
         right: 0;
+        box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
       }
     }
-    .gothic-style {
-      background-image: url(../img/holsten-gate.svg);
-      background-color: #ffffff;
+    .krayola {
+      background-color: #1974D2;
     }
-    .fairy-style {
-      background-image: url(../img/unicorn.svg);
-      background-color: #f08080;
+    .sky {
+      background-color: #2271B3;
+      bottom: 20px;
     }
-    .arabian-style {
-      background-image: url(../img/mosque-facade.svg);
-      background-color: #ffffe0;
+    .kobalt {
+      background-color: #0047AB;
+      bottom: 40px;
     }
-
+    .deep {
+      background-color: #002f55;
+      bottom: 60px;
+    }
   }
 }
 
+.bigimg {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  .imginner {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: top center;
+    transform-origin: 50% 80%;
+    animation: imageZoom linear 50s;
+    animation-iteration-count: infinite;
+    -webkit-animation: imageZoom linear 50s;
+    -webkit-animation-iteration-count: infinite;
+  }
+}
+@keyframes imageZoom {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.24); }
+  100% { transform: scale(1);}
+}
 
+@-moz-keyframes imageZoom {
+  0% { -moz-transform: scale(1);}
+  50% { -moz-transform: scale(1.24); }
+  100% { -moz-transform: scale(1); }
+}
+
+@-webkit-keyframes imageZoom {
+  0% { -webkit-transform: scale(1); }
+  50% {-webkit-transform: scale(1.24); }
+  100% { -webkit-transform: scale(1); }
+}
+
+@-ms-keyframes imageZoom {
+  0% { -ms-transform: scale(1); }
+  50% { -ms-transform: scale(1.24); }
+  100% { -ms-transform: scale(1); }
+}

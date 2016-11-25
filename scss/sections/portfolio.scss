@@ -27,12 +27,18 @@
     display: none;
     padding: 0;
     position: relative;
+    overflow: hidden;
+    transform: scale(1.02);
     &:hover .portfolio-item-container {
       opacity: 1;
       padding-top: 5%;
     }
+    &:hover img {
+      transform: scale(1.2);
+    }
     img {
       width: 100%;
+      transition: .5s;
     }
     .portfolio-item-container {
       position: absolute;

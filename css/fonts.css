@@ -1,17 +1,17 @@
 /* font-family: "Gothic"; */
-@font-face {
-    font-family: "Gothic";
-    src: url("../fonts/arthur_gothic.ttf");
-    font-style: normal;
-    font-weight: normal;
-}
+/*@font-face {*/
+    /*font-family: "Gothic";*/
+    /*src: url("../fonts/arthur_gothic.ttf");*/
+    /*font-style: normal;*/
+    /*font-weight: normal;*/
+/*}*/
 /* font-family: "Arabian"; */
-@font-face {
-    font-family: "Arabian";
-    src: url("../fonts/ds_arabic.ttf");
-    font-style: normal;
-    font-weight: normal;
-}
+/*@font-face {*/
+    /*font-family: "Arabian";*/
+    /*src: url("../fonts/arabian.ttf");*/
+    /*font-style: normal;*/
+    /*font-weight: normal;*/
+/*}*/
 /* font-family: "RalewayBold"; */
 @font-face {
     font-family: "RalewayBold";

@@ -1,4 +1,5 @@
-$color: #8238A7; 
+$color: #2271B3;
+//sky blue
 $text_color: #888;
 $main_color: #222;
 $bg_light: #FAFAFA;
@@ -92,15 +93,24 @@ section {
     }
 	li.active {
 		color: #fff;
-		border-bottom: 1px solid $color;
-    }
+		border-bottom: 2px solid $color;
+		padding: 3px;
+	}
 }
 
-.portfolio-item .portfolio-item-content {
-	a {
-		border-color: $color;
-		color: $color;
-    }
+.portfolio {
+  .portfolio-item {
+	.portfolio-item-container {
+	  .popup-content {
+		transition: .3s;
+		&:hover {
+		  border-color: $color;
+		  color: $color;
+		  background-color: rgba(255, 255, 255, .15);
+		}
+	  }
+	}
+  }
 }
 
 .footer a {
@@ -134,9 +144,4 @@ section {
 			background-color: $color;
 		}
 	}
-}
-
-body {
-  font-family: "Arabian", sans-serif;
-  filter: grayscale(50%);
 }

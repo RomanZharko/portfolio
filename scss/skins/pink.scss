@@ -1,4 +1,5 @@
-$color: #D60270; 
+$color: #0047AB;
+//kobalt
 $text_color: #888;
 $main_color: #222;
 $bg_light: #FAFAFA;
@@ -89,18 +90,39 @@ section {
 .portfolio {
 	li {
 		color: $text_color;
+		&:after {
+			display: block;
+			content: "";
+			height: 2px;
+			width: 0%;
+			background-color: $color;
+			transition: width .25s ease-in-out;
+			position: absolute;
+		}
+		&:hover:after {
+		  	width: 100%;
+		}
     }
 	li.active {
 		color: #fff;
-		border-bottom: 1px solid $color;
-    }
+		border-bottom: 2px solid $color;
+		padding: 3px;
+	}
 }
 
-.portfolio-item .portfolio-item-content {
-	a {
-		border-color: $color;
-		color: $color;
-    }
+.portfolio {
+  .portfolio-item {
+	.portfolio-item-container {
+	  .popup-content {
+		transition: .3s;
+		&:hover {
+		  border-color: $color;
+		  color: $color;
+		  background-color: rgba(255, 255, 255, .15);
+		}
+	  }
+	}
+  }
 }
 
 .footer a {
