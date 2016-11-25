@@ -89,14 +89,26 @@ section {
 }
 
 .portfolio {
-	li {
-		color: $text_color;
-    }
-	li.active {
-		color: #fff;
-		border-bottom: 2px solid $color;
-	  	padding: 3px;
-    }
+  li {
+	color: $text_color;
+	&:after {
+	  display: block;
+	  content: "";
+	  height: 2px;
+	  width: 0%;
+	  background-color: $color;
+	  transition: width .25s ease-in-out;
+	  position: absolute;
+	}
+	&:hover:after {
+	  width: 100%;
+	}
+  }
+  li.active {
+	color: #fff;
+	border-bottom: 2px solid $color;
+	padding: 3px;
+  }
 }
 
 .portfolio {
