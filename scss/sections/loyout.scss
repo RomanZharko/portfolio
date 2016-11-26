@@ -128,6 +128,9 @@ section {
     display: inline-block;
     font-size: 20px;
     padding: 0 3px;
+    &:hover {
+      transform: scale(1.3);  
+    }
   }
 }
 
