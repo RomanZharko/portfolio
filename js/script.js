@@ -71,7 +71,7 @@ $(document).ready(function(){
 	$(".top-menu ul a").mPageScroll2id();
 
 
-    var colors = ['tomato', 'blue', 'purple', 'pink'];
+    var colors = ['krayola', 'deep', 'sky', 'kobalt'];
 
     var rand = Math.floor(Math.random() * colors.length);
 
@@ -88,16 +88,16 @@ $(document).ready(function(){
     }
 
     $('body').on('click', '.deep', function(){
-        $("head").append($("<link rel='stylesheet' href='css/skins/blue.css' type='text/css' media='screen' />"));
+        $("head").append($("<link rel='stylesheet' href='css/skins/deep.css' type='text/css' media='screen' />"));
     });
     $('body').on('click', '.sky', function(){
-        $("head").append($("<link rel='stylesheet' href='css/skins/purple.css' type='text/css' media='screen' />"));
+        $("head").append($("<link rel='stylesheet' href='css/skins/sky.css' type='text/css' media='screen' />"));
     });
     $('body').on('click', '.kobalt', function(){
-        $("head").append($("<link rel='stylesheet' href='css/skins/pink.css' type='text/css' media='screen' />"));
+        $("head").append($("<link rel='stylesheet' href='css/skins/kobalt.css' type='text/css' media='screen' />"));
     });
     $('body').on('click', '.krayola', function(){
-        $("head").append($("<link rel='stylesheet' href='css/skins/tomato.css' type='text/css' media='screen' />"));
+        $("head").append($("<link rel='stylesheet' href='css/skins/krayola.css' type='text/css' media='screen' />"));
     });
 
 
