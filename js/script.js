@@ -1,4 +1,4 @@
-$(document).ready(function(){
+// $(document).ready(function(){
     // menu button
     $('.menu-container').click(function(){
       $('.first').toggleClass('first-open');
@@ -65,12 +65,12 @@ $(document).ready(function(){
     $('.right .resume-item').animated('fadeInRight', 'fadeOutRight');
 
 
-
+    //validation form
     $("input, select, textarea").jqBootstrapValidation();
-
+    //scroll to
 	$(".top-menu ul a").mPageScroll2id();
 
-
+    
     var colors = ['krayola', 'deep', 'sky', 'kobalt'];
 
     var rand = Math.floor(Math.random() * colors.length);
@@ -101,7 +101,7 @@ $(document).ready(function(){
     });
 
 
-});
+// });
 
 
 
