@@ -1,4 +1,4 @@
-// $(document).ready(function(){
+$(document).ready(function(){
     // menu button
     $('.menu-container').click(function(){
       $('.first').toggleClass('first-open');
@@ -100,8 +100,49 @@
         $("head").append($("<link rel='stylesheet' href='css/skins/krayola.css' type='text/css' media='screen' />"));
     });
 
+    var ctx = document.getElementById("myChart");
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["HTML5", "CSS3", "JavaScript", "AngularJS", "WordPress", "PhotoShop"],
+            datasets: [{
+                // label: '# of Votes',
+                data: [22, 19, 13, 15, 12, 13],
+                backgroundColor: [
+                    'rgba(34, 113, 179, 0.2)',
+                    'rgba(34, 113, 179, 0.2)',
+                    'rgba(34, 113, 179, 0.2)',
+                    'rgba(34, 113, 179, 0.2)',
+                    'rgba(34, 113, 179, 0.2)',
+                    'rgba(34, 113, 179, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(34, 113, 179, 1)',
+                    'rgba(34, 113, 179, 1)',
+                    'rgba(34, 113, 179, 1)',
+                    'rgba(34, 113, 179, 1)',
+                    'rgba(34, 113, 179, 1)',
+                    'rgba(34, 113, 179, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    });
 
-// });
+
+});
+
+
+
 
 
 
